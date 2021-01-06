@@ -1,0 +1,236 @@
+hamza@DESKTOP-UAOMG6T:~$ man
+What manual page do you want?
+For example, try 'man man'.
+hamza@DESKTOP-UAOMG6T:~$ man ls
+hamza@DESKTOP-UAOMG6T:~$ manls
+manls: command not found
+hamza@DESKTOP-UAOMG6T:~$ man 3 ls
+No manual entry for ls in section 3
+hamza@DESKTOP-UAOMG6T:~$ ls -l
+total 0
+drwxr-xr-x 1 hamza hamza 512 Jan  6 15:45 Workshop
+drwxr-xr-x 1 hamza hamza 512 Jan  6 15:05 hamza
+-rw-r--r-- 1 hamza hamza   0 Jan  5 22:12 hello
+-rw-r--r-- 1 hamza hamza   0 Jan  5 22:12 hi
+-rw-r--r-- 1 hamza hamza   0 Jan  5 22:12 howareyou
+hamza@DESKTOP-UAOMG6T:~$ ls-h
+
+Command 'ls-h' not found, did you mean:
+
+  command 'lsh' from deb lsh-client (2.1-12build3)
+
+Try: sudo apt install <deb name>
+
+hamza@DESKTOP-UAOMG6T:~$ ls -h
+Workshop  hamza  hello  hi  howareyou
+hamza@DESKTOP-UAOMG6T:~$ ls -l -h
+total 0
+drwxr-xr-x 1 hamza hamza 512 Jan  6 15:45 Workshop
+drwxr-xr-x 1 hamza hamza 512 Jan  6 15:05 hamza
+-rw-r--r-- 1 hamza hamza   0 Jan  5 22:12 hello
+-rw-r--r-- 1 hamza hamza   0 Jan  5 22:12 hi
+-rw-r--r-- 1 hamza hamza   0 Jan  5 22:12 howareyou
+hamza@DESKTOP-UAOMG6T:~$ ls -lh
+total 0
+drwxr-xr-x 1 hamza hamza 512 Jan  6 15:45 Workshop
+drwxr-xr-x 1 hamza hamza 512 Jan  6 15:05 hamza
+-rw-r--r-- 1 hamza hamza   0 Jan  5 22:12 hello
+-rw-r--r-- 1 hamza hamza   0 Jan  5 22:12 hi
+-rw-r--r-- 1 hamza hamza   0 Jan  5 22:12 howareyou
+hamza@DESKTOP-UAOMG6T:~$ ls -lct
+total 0
+drwxr-xr-x 1 hamza hamza 512 Jan  6 15:45 Workshop
+drwxr-xr-x 1 hamza hamza 512 Jan  6 15:05 hamza
+-rw-r--r-- 1 hamza hamza   0 Jan  5 22:12 howareyou
+-rw-r--r-- 1 hamza hamza   0 Jan  5 22:12 hello
+-rw-r--r-- 1 hamza hamza   0 Jan  5 22:12 hi
+hamza@DESKTOP-UAOMG6T:~$ ls -a
+.              .gitconfig   .profile                   hi
+..             .landscape   .sudo_as_admin_successful  howareyou
+.bash_history  .lesshst     Workshop
+.bash_logout   .local       hamza
+.bashrc        .motd_shown  hello
+hamza@DESKTOP-UAOMG6T:~$ ls /etc/
+NetworkManager                 mailcap.order
+PackageKit                     manpath.config
+X11                            mdadm
+adduser.conf                   mime.types
+alternatives                   mke2fs.conf
+apparmor                       modprobe.d
+apparmor.d                     modules
+apport                         modules-load.d
+apt                            mtab
+at.deny                        multipath.conf
+bash.bashrc                    nanorc
+bash_completion                netplan
+bash_completion.d              network
+bindresvport.blacklist         networkd-dispatcher
+binfmt.d                       networks
+byobu                          newt
+ca-certificates                nsswitch.conf
+ca-certificates.conf           opt
+ca-certificates.conf.dpkg-old  os-release
+calendar                       overlayroot.conf
+cloud                          overlayroot.local.conf
+console-setup                  pam.conf
+cron.d                         pam.d
+cron.daily                     passwd
+cron.hourly                    passwd-
+cron.monthly                   perl
+cron.weekly                    pki
+crontab                        pm
+cryptsetup-initramfs           polkit-1
+crypttab                       pollinate
+dbus-1                         popularity-contest.conf
+dconf                          profile
+debconf.conf                   profile.d
+debian_version                 protocols
+default                        pulse
+deluser.conf                   python3
+depmod.d                       python3.8
+dhcp                           rc0.d
+dpkg                           rc1.d
+e2scrub.conf                   rc2.d
+ec2_version                    rc3.d
+environment                    rc4.d
+ethertypes                     rc5.d
+fonts                          rc6.d
+fstab                          rcS.d
+fuse.conf                      resolv.conf
+fwupd                          rmt
+gai.conf                       rpc
+groff                          rsyslog.conf
+group                          rsyslog.d
+group-                         screenrc
+gshadow                        security
+gshadow-                       selinux
+gss                            sensors.d
+hdparm.conf                    sensors3.conf
+host.conf                      services
+hostname                       shadow
+hosts                          shadow-
+hosts.allow                    shells
+hosts.deny                     skel
+init.d                         sos.conf
+initramfs-tools                ssh
+inputrc                        ssl
+iproute2                       subgid
+iscsi                          subgid-
+issue                          subuid
+issue.net                      subuid-
+kernel                         sudoers
+kernel-img.conf                sudoers.d
+landscape                      sysctl.conf
+ld.so.cache                    sysctl.d
+ld.so.conf                     systemd
+ld.so.conf.d                   terminfo
+ldap                           timezone
+legal                          tmpfiles.d
+libaudit.conf                  ubuntu-advantage
+locale.alias                   ucf.conf
+locale.gen                     udev
+localtime                      ufw
+logcheck                       update-manager
+login.defs                     update-motd.d
+logrotate.conf                 update-notifier
+logrotate.d                    vim
+lsb-release                    vmware-tools
+ltrace.conf                    vtrgb
+lvm                            vulkan
+machine-id                     wgetrc
+magic                          xattr.conf
+magic.mime                     xdg
+mailcap                        zsh_command_not_found
+hamza@DESKTOP-UAOMG6T:~$ lsusb
+unable to initialize libusb: -99
+hamza@DESKTOP-UAOMG6T:~$ ls --color
+Workshop  hamza  hello  hi  howareyou
+hamza@DESKTOP-UAOMG6T:~$ pwd
+/home/hamza
+hamza@DESKTOP-UAOMG6T:~$ cd /
+hamza@DESKTOP-UAOMG6T:/$ pwd
+/
+hamza@DESKTOP-UAOMG6T:/$ cd
+hamza@DESKTOP-UAOMG6T:~$ pwd
+/home/hamza
+hamza@DESKTOP-UAOMG6T:~$ cd ~
+hamza@DESKTOP-UAOMG6T:~$ pwd
+/home/hamza
+hamza@DESKTOP-UAOMG6T:~$ cd ..
+hamza@DESKTOP-UAOMG6T:/home$ pwd
+/home
+hamza@DESKTOP-UAOMG6T:/home$ cd /user/bin
+-bash: cd: /user/bin: No such file or directory
+hamza@DESKTOP-UAOMG6T:/home$ cd
+hamza@DESKTOP-UAOMG6T:~$ cd /usr/bin
+hamza@DESKTOP-UAOMG6T:/usr/bin$ pwd
+/usr/bin
+hamza@DESKTOP-UAOMG6T:/usr/bin$ cd -
+/home/hamza
+hamza@DESKTOP-UAOMG6T:~$ pwd
+/home/hamza
+hamza@DESKTOP-UAOMG6T:~$ mkdir new/
+hamza@DESKTOP-UAOMG6T:~$ ls
+Workshop  hamza  hello  hi  howareyou  new
+hamza@DESKTOP-UAOMG6T:~$ rmdir new/
+hamza@DESKTOP-UAOMG6T:~$ ls
+Workshop  hamza  hello  hi  howareyou
+hamza@DESKTOP-UAOMG6T:~$ mkdir newone/
+hamza@DESKTOP-UAOMG6T:~$ ls
+Workshop  hamza  hello  hi  howareyou  newone
+hamza@DESKTOP-UAOMG6T:~$ touch happy.txt
+hamza@DESKTOP-UAOMG6T:~$ ls
+Workshop  hamza  happy.txt  hello  hi  howareyou  newone
+hamza@DESKTOP-UAOMG6T:~$ cp happy.txt newone/
+hamza@DESKTOP-UAOMG6T:~$ ls
+Workshop  hamza  happy.txt  hello  hi  howareyou  newone
+hamza@DESKTOP-UAOMG6T:~$ ls newone/
+happy.txt
+hamza@DESKTOP-UAOMG6T:~$ rm happy.txt
+hamza@DESKTOP-UAOMG6T:~$ ls
+Workshop  hamza  hello  hi  howareyou  newone
+hamza@DESKTOP-UAOMG6T:~$ pwd
+/home/hamza
+hamza@DESKTOP-UAOMG6T:~$ mv newone/happy.txt  /home/hamza/
+hamza@DESKTOP-UAOMG6T:~$ ls
+Workshop  happy.txt  hello  hi  howareyou  newone
+hamza@DESKTOP-UAOMG6T:~$ mv happy.txt newone/
+hamza@DESKTOP-UAOMG6T:~$ ls
+Workshop  hello  hi  howareyou  newone
+hamza@DESKTOP-UAOMG6T:~$ ls newone/
+happy.txt
+hamza@DESKTOP-UAOMG6T:~$ mkdir other/
+hamza@DESKTOP-UAOMG6T:~$ ls
+Workshop  hello  hi  howareyou  newone  other
+hamza@DESKTOP-UAOMG6T:~$ cp -r newone/ other/
+hamza@DESKTOP-UAOMG6T:~$ ls
+Workshop  hello  hi  howareyou  newone  other
+hamza@DESKTOP-UAOMG6T:~$ ls other/
+newone
+hamza@DESKTOP-UAOMG6T:~$ ls other/newone/
+happy.txt
+hamza@DESKTOP-UAOMG6T:~$ cp -r newone/ other/newone/
+hamza@DESKTOP-UAOMG6T:~$ ls
+Workshop  hello  hi  howareyou  newone  other
+hamza@DESKTOP-UAOMG6T:~$ ls other/
+newone
+hamza@DESKTOP-UAOMG6T:~$ ls other/newone/
+happy.txt  newone
+hamza@DESKTOP-UAOMG6T:~$ ls other/newone/newone/
+happy.txt
+hamza@DESKTOP-UAOMG6T:~$ ln -s  other/newone/newone/ lien
+hamza@DESKTOP-UAOMG6T:~$ ls
+Workshop  hello  hi  howareyou  lien  newone  other
+hamza@DESKTOP-UAOMG6T:~$ rm -f lien
+hamza@DESKTOP-UAOMG6T:~$ ls
+Workshop  hello  hi  howareyou  newone  other
+hamza@DESKTOP-UAOMG6T:~$ cat > good.txt
+hi how are you today
+i hope you are doing good
+^C
+hamza@DESKTOP-UAOMG6T:~$ cat good.txt
+hi how are you today
+i hope you are doing good
+hamza@DESKTOP-UAOMG6T:~$ more good.txt
+hi how are you today
+i hope you are doing good
